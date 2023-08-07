@@ -1,4 +1,4 @@
-from calculate_predictions import *
+from energy_prediction.calculate_predictions import *
 
 def print_predictions(hours_active_lights, 
                       hours_active_computer, 

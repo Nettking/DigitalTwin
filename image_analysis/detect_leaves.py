@@ -1,5 +1,5 @@
 from os import listdir, path
-from detect_leaf import *
+from image_analysis.detect_leaf import *
 
 def detect_leaves(folder_path='/mnt/c/strawberries/Strawberry___Healthy'):
     

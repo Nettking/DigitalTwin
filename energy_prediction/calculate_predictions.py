@@ -1,4 +1,4 @@
-from default_values import *
+from energy_prediction.default_values import *
 
 total_watt_pr_day_lights = hours_active_lights * watt_pr_hour_lights
 total_watt_pr_day_computer = hours_active_computer * watt_pr_hour_computer
