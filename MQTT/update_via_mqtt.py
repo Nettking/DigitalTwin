@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 import json
 from energy_prediction.print_predictions import *
-from manage_payload import *
+from MQTT.manage_payload import *
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
