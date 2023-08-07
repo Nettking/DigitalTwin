@@ -5,21 +5,6 @@ import threading
 
 if __name__ == '__main__':
     try:
-        # Create a thread for the update_via_mqtt function
-        mqtt_thread = threading.Thread(target=update_via_mqtt)
-        print("MQTT thread created.")
-    except: 
-        print("Couldn't create thread for update_via_mqtt.")
-    
-    try:
-        # Start the thread
-        mqtt_thread.start()
-        print("MQTT thread started")
-    except: 
-        print("Could not start MQTT thread.")
-
-    # Continue with the rest of the program
-    try:
         print_predictions(hours_active_lights, 
                       hours_active_computer, 
                       hours_active_irrigations, 
@@ -33,6 +18,20 @@ if __name__ == '__main__':
                       number_of_pots)
     except:
         print("Could not print predictions")
+
+    try:
+        # Create a thread for the update_via_mqtt function
+        mqtt_thread = threading.Thread(target=update_via_mqtt)
+        print("MQTT thread created.")
+    except: 
+        print("Couldn't create thread for update_via_mqtt.")
+    
+    try:
+        # Start the thread
+        mqtt_thread.start()
+        print("MQTT thread started")
+    except: 
+        print("Could not start MQTT thread.")
     
     try:
         detect_leaves('/mnt/c/strawberries/Strawberry___Healthy')
