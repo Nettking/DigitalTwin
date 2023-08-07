@@ -1,0 +1,11 @@
+days_of_cultivation = 150
+hours_active_lights = 10
+hours_active_computer = 24
+hours_active_irrigations = (1/60)/2
+watt_pr_hour_lights = 53.21
+watt_pr_hour_computer = 33.11
+watt_pr_hour_irrigations = 4.45
+expected_yield_pr_plant = 225
+weight_pr_strawberry = 25
+number_of_pots = 16
+price_of_energy_pr_kilo_watt = 1.1

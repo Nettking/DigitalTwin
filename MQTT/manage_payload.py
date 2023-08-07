@@ -1,4 +1,4 @@
-from print_predictions import *
+from energy_prediction.print_predictions import *
 
 def manage_payload(payload):
     param_name = payload["parameter"]
